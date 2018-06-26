@@ -21,3 +21,12 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+Lista09-InterfaceGráfica/manifest.mf
+Lista09-InterfaceGráfica/nbproject/build-impl.xml
+Lista09-InterfaceGráfica/nbproject/private/private.properties
+Lista09-InterfaceGráfica/nbproject/genfiles.properties
+Lista09-InterfaceGráfica/nbproject/project.properties
+Lista09-InterfaceGráfica/nbproject/project.xml
+Lista09-InterfaceGráfica/build/classes/.netbeans_update_resources
+Lista09-InterfaceGráfica/build/classes/.netbeans_automatic_build
+Lista09-InterfaceGráfica/build.xml
