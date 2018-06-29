@@ -76,18 +76,25 @@ public class Exercicio02 implements ExercicioBaseInterface {
             public void actionPerformed(ActionEvent e){
                 
                 if(jTextFieldNumero.getText().trim().isEmpty()){
-                    JOptionPane.showMessageDialog(null, "!!Campo Número está em branco!!", "AVISO", 
+                    JOptionPane.showMessageDialog(null, "!! Campo Número está em branco !!", "AVISO", 
                             JOptionPane.WARNING_MESSAGE);
+                    return;
                 }
                 
-                int numero = 0;
+                
+                int numero = 0, soma = 0;
+               
                 try{
                     numero = Integer.parseInt(jTextFieldNumero.getText().trim());
                 }catch (NumberFormatException ex){
-                    JOptionPane.showMessageDialog(null, "Entrada Inválida");
-                    
-                
+                    JOptionPane.showMessageDialog(null, "!! Entrada Inválida !!");
+                    return;
                 }
+                
+                soma = numero * 50;
+                
+                JOptionPane.showMessageDialog(null, "Resultado: " + soma);
+                
             }
         });
     }
