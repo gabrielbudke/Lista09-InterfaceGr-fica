@@ -33,6 +33,7 @@ public class Menu implements ExercicioBaseInterface {
         gerarLocalização();
         adicionarComponentes();
         acaoExercicio01();
+        acaoExercicio02();
         
         jFrame.setVisible(true);
     }
@@ -41,7 +42,7 @@ public class Menu implements ExercicioBaseInterface {
     public void gerarTela() {
 
         jFrame = new JFrame();
-        jFrame.setSize(660,400);
+        jFrame.setSize(640,359);
         jFrame.setLayout(null);
         jFrame.setLocationRelativeTo(null);
         jFrame.setResizable(false);
@@ -67,7 +68,7 @@ public class Menu implements ExercicioBaseInterface {
     @Override
     public void instanciarComponentes() {
         exercicio01 = new JButton("Exercicio01");
-        exercicio02 = new JButton();
+        exercicio02 = new JButton("Exercicio02");
         exercicio03 = new JButton();
         exercicio04 = new JButton();
         exercicio05 = new JButton();
@@ -76,13 +77,14 @@ public class Menu implements ExercicioBaseInterface {
         exercicio08 = new JButton();
         exercicio09 = new JButton();
         
-        fundo = new JLabel(new ImageIcon(Menu.class.getResource("/imagens/marr.jpg")));
+        fundo = new JLabel(new ImageIcon(Menu.class.getResource("/imagens/madeira.jpg")));
     }
 
     @Override
     public void gerarDimensões() {
         exercicio01.setSize(120, 40);
-        /*exercicio02.setSize(100, 100);
+        exercicio02.setSize(120, 40);
+        /*
         exercicio03.setSize(100, 100);
         exercicio04.setSize(100, 100);
         exercicio05.setSize(100, 100);
@@ -98,7 +100,8 @@ public class Menu implements ExercicioBaseInterface {
     @Override
     public void gerarLocalização() {
         exercicio01.setLocation(15, 10);
-        /*exercicio02.setLocation(30, 10);
+        exercicio02.setLocation(140, 10);
+        /*
         exercicio03.setLocation(50, 10);
         exercicio04.setLocation(70, 10);
         exercicio05.setLocation(90, 30);
@@ -107,7 +110,7 @@ public class Menu implements ExercicioBaseInterface {
         exercicio08.setLocation(150, 30);
         exercicio09.setLocation(170, 30);
         */
-        fundo.setLocation(10,0);
+        fundo.setLocation(0,0);
     }
     
     private void acaoExercicio01(){
@@ -121,7 +124,17 @@ public class Menu implements ExercicioBaseInterface {
         });
     }
     
-    private void acaoExercicio02(){}
+    private void acaoExercicio02(){
+        exercicio02.addActionListener(new ActionListener(){
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new exercicio02.Exercicio02();
+            }
+            
+        });
+    
+    }
     private void acaoExercicio03(){}
     private void acaoExercicio04(){}
     private void acaoExercicio05(){}

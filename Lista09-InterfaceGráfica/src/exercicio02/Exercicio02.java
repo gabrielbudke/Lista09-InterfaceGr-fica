@@ -20,6 +20,14 @@ public class Exercicio02 implements ExercicioBaseInterface {
     private JButton jButtonTabuada;
 
     public Exercicio02() {
+        gerarTela();
+        instanciarComponentes();
+        adicionarComponentes();
+        gerarDimensões();
+        gerarLocalização();
+        acaoButtonTabuada();
+        
+        jFrame.setVisible(true);
 
     }
 
@@ -51,15 +59,15 @@ public class Exercicio02 implements ExercicioBaseInterface {
     @Override
     public void gerarDimensões() {
         jLabelNumero.setSize(50, 10);
-        jTextFieldNumero.setSize(100, 10);
-        jButtonTabuada.setSize(100, 25);
+        jTextFieldNumero.setSize(100, 15);
+        jButtonTabuada.setSize(120, 30);
     }
 
     @Override
     public void gerarLocalização() {
-        jLabelNumero.setLocation(50, 10);
-        jTextFieldNumero.setLocation(100, 10);
-        jButtonTabuada.setLocation(100, 25);
+        jLabelNumero.setLocation(10, 10);
+        jTextFieldNumero.setLocation(65, 10);
+        jButtonTabuada.setLocation(55, 40);
 
     }
     
@@ -76,6 +84,7 @@ public class Exercicio02 implements ExercicioBaseInterface {
                 try{
                     numero = Integer.parseInt(jTextFieldNumero.getText().trim());
                 }catch (NumberFormatException ex){
+                    JOptionPane.showMessageDialog(null, "Entrada Inválida");
                     
                 
                 }
