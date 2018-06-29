@@ -35,6 +35,7 @@ public class Menu implements ExercicioBaseInterface {
         acaoExercicio02();
         acaoExercicio03();
         acaoExercicio04();
+        acaoExercicio05();
 
         jFrame.setVisible(true);
     }
@@ -71,7 +72,7 @@ public class Menu implements ExercicioBaseInterface {
         exercicio02 = new JButton("Exercicio02");
         exercicio03 = new JButton("Exercicio03");
         exercicio04 = new JButton("Exercicio04");
-        exercicio05 = new JButton();
+        exercicio05 = new JButton("Exercicio05");
         exercicio06 = new JButton();
         exercicio07 = new JButton();
         exercicio08 = new JButton();
@@ -86,9 +87,9 @@ public class Menu implements ExercicioBaseInterface {
         exercicio02.setSize(120, 40);
         exercicio03.setSize(120, 40);
         exercicio04.setSize(120, 40);
+        exercicio05.setSize(120, 40);
 
         /*
-         exercicio05.setSize(100, 100);
          exercicio06.setSize(100, 100);
          exercicio07.setSize(100, 100);
          exercicio08.setSize(100, 100);
@@ -103,9 +104,9 @@ public class Menu implements ExercicioBaseInterface {
         exercicio02.setLocation(140, 10);
         exercicio03.setLocation(265, 10);
         exercicio04.setLocation(390, 10);
+        exercicio05.setLocation(515, 10);
 
         /*
-         exercicio05.setLocation(90, 30);
          exercicio06.setLocation(110, 30);
          exercicio07.setLocation(130, 30);
          exercicio08.setLocation(150, 30);
@@ -162,6 +163,15 @@ public class Menu implements ExercicioBaseInterface {
     }
 
     private void acaoExercicio05() {
+        exercicio05.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                new exercicio05.Exercicio05();
+            }
+
+        });
+
     }
 
     private void acaoExercicio07() {
