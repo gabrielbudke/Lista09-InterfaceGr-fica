@@ -113,9 +113,9 @@ public class Exercicio05 implements ExercicioBaseInterface {
         jTextFieldNumero02.setLocation(10, 80);
 
         jButtonSomar.setLocation(50, 50);
-        jButtonSubtrair.setLocation(50, 50);
-        jButtonDividir.setLocation(50, 50);
-        jButtonMultiplicar.setLocation(50, 50);
+        jButtonSubtrair.setLocation(80, 50);
+        jButtonDividir.setLocation(110, 50);
+        jButtonMultiplicar.setLocation(140, 50);
     }
 
     private void acaoButtonSomar() {
@@ -127,6 +127,8 @@ public class Exercicio05 implements ExercicioBaseInterface {
                 validacao();
 
                 somar += n1 + n2;
+                
+                
                 sub += n1 - n2;
                 multiplica += n1 - n2;
                 dividir += n1 / n2;
@@ -170,14 +172,14 @@ public class Exercicio05 implements ExercicioBaseInterface {
     public void validacao() {
 
         if (jTextFieldNumero01.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "!! Campo está vazio", "AVISO",
+            JOptionPane.showMessageDialog(null, "!! Campo está vazio !!", "AVISO",
                     JOptionPane.WARNING_MESSAGE);
             jTextFieldNumero01.requestFocus();
             return;
         }
 
         if (jTextFieldNumero02.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(null, "!! Campo está vazio", "AVISO",
+            JOptionPane.showMessageDialog(null, "!! Campo está vazio !!", "AVISO",
                     JOptionPane.WARNING_MESSAGE);
             jTextFieldNumero02.requestFocus();
             return;

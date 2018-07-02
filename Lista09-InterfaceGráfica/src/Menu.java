@@ -44,7 +44,7 @@ public class Menu implements ExercicioBaseInterface {
     public void gerarTela() {
 
         jFrame = new JFrame();
-        jFrame.setSize(640, 359);
+        jFrame.setSize(640, 400);
         jFrame.setLayout(null);
         jFrame.setLocationRelativeTo(null);
         jFrame.setResizable(false);
@@ -83,11 +83,11 @@ public class Menu implements ExercicioBaseInterface {
 
     @Override
     public void gerarDimensões() {
-        exercicio01.setSize(120, 40);
-        exercicio02.setSize(120, 40);
-        exercicio03.setSize(120, 40);
-        exercicio04.setSize(120, 40);
-        exercicio05.setSize(120, 40);
+        exercicio01.setSize(400, 30);
+        exercicio02.setSize(400, 30);
+        exercicio03.setSize(400, 30);
+        exercicio04.setSize(400, 30);
+        exercicio05.setSize(400, 30);
 
         /*
          exercicio06.setSize(100, 100);
@@ -100,11 +100,11 @@ public class Menu implements ExercicioBaseInterface {
 
     @Override
     public void gerarLocalização() {
-        exercicio01.setLocation(15, 10);
-        exercicio02.setLocation(140, 10);
-        exercicio03.setLocation(265, 10);
-        exercicio04.setLocation(390, 10);
-        exercicio05.setLocation(515, 10);
+        exercicio01.setLocation(10, 5);
+        exercicio02.setLocation(10, 50);
+        exercicio03.setLocation(10, 90);
+        exercicio04.setLocation(10, 130);
+        exercicio05.setLocation(10, 170);
 
         /*
          exercicio06.setLocation(110, 30);
